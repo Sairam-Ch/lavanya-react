@@ -1,0 +1,208 @@
+body{
+  background-color: white;
+}
+
+.App {
+  text-align: center;
+}
+/* Content page Icons */
+i{
+  padding-left: 3em;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.first {  
+  padding: 1px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}  
+
+.navbar {
+  /* padding: 30px; */
+  overflow: hidden;
+  background-color: rgb(51, 51, 51);
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.card {
+  background-color: white;
+  padding: 5px;
+  margin-top: 20px;
+}
+.likecard {
+  background-color: white;
+  padding: 5px;
+  margin-top: 20px;
+  border-radius: 20px;
+  /* border: 1px solid #323246; */
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  /* width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px; */
+}
+* {
+  box-sizing: border-box;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+/* Fake image */
+.fakeimg {
+  background-color: #f2f1f2;
+  width: 100%;
+  padding: 20px;
+  border:1px solid #ccc;
+  box-shadow: 0 2px 3px #ccc;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 25%;
+}
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  float: left;
+  width: 25%;
+  padding-left: 200px;
+  color: black;
+
+}
+
+/* Middle column */
+.column.middle {
+
+  width: 50%;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.content{
+  margin: auto;
+  /* border: 1px solid #eee; */
+  border:0 solid black;
+  box-shadow: 0 2px 3px #ccc;
+  padding: 16px;
+  text-align: left;
+}
+
+
+
+.search {
+  background-color: #aaa;
+}
+
+
+/* Styles for wrapping the search box */
+
+.main {
+    width: 20%;
+    margin: 50px auto;
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+  border-radius:25px;
+  height: 50px;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    color: #aaa;
+}
+
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+
